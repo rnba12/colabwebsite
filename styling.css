@@ -1,0 +1,46 @@
+body {
+    background-color: #062047;
+    background: linear-gradient(rgba(0, 0, 0, 0.347),rgb(10, 8, 8)),
+    url(watergif.gif) repeat-x;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;  
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #duck1 {
+    display: inline-block;
+    font-size: 60%;
+    animation: steps 4s infinite alternate;
+  }
+  #duck2 {
+    display: inline-block;
+    font-size: 60%;
+    animation: steps 2s infinite alternate;
+  }
+  #duck3 {
+    display: inline-block;
+    font-size: 60%;
+    animation: steps 6s infinite alternate;
+  }
+  
+  #duck1:hover {
+    transform: rotate(130deg);
+  }
+  #duck2:hover {
+    transform: rotate(130deg);
+    transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333)
+  }
+
+  audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
+  }
+  @keyframes steps {
+    0% { transform: rotate(30deg); }
+    100% { transform: rotate(-15deg); }
+  }
